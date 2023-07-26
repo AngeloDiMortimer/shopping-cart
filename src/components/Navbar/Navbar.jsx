@@ -19,15 +19,17 @@ const Navbar = () => {
                         <a href="#" className="">About Us</a>
                     </div>
 
-                    {/* Mobile Menu*/}
-                    <BurgMenu />
+
 
                     {/* Cart Icon */}
-                    <IconContext.Provider value={{color: "blue", size: 26, className: "color-green-600"}}> 
+                    <IconContext.Provider value={{color: "blue", size: 26, className: "mr-4"}}> 
                         <div>
                             <FaCartShopping />
                         </div>
                     </IconContext.Provider>
+                    
+                    {/* Mobile Menu*/}
+                    <BurgMenu />
                 </div>
             </div>
         </div>

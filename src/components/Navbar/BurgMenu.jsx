@@ -13,7 +13,7 @@ const BurgMenu = () => {
 
     return (
         <>
-            <button id="menu-btn" className={`block hamburger md:hidden focus:outline-none mr-4 ${isHidden}`} 
+            <button id="menu-btn" className={`block hamburger md:hidden focus:outline-none ${isHidden}`} 
             onClick={handleOpen}>
               <span className="hamburger-top"></span>
               <span className="hamburger-middle"></span>
