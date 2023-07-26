@@ -1,10 +1,13 @@
+import Navbar from "./Navbar/Navbar"
+
 
 function App() {
  //1. Work on header and Navbar
 
   return (
     <>
-    <h1 className="text-4xl text-red-600">Placeholder text</h1>
+    <Navbar />
+    <h1 className="text-4xl text-blue-600">Placeholder text</h1>
     
     </>
   )
