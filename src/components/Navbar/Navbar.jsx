@@ -1,6 +1,7 @@
 import { IconContext } from "react-icons";
 import { FaCartShopping } from "react-icons/fa6";
 import BurgMenu from "./BurgMenu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     
@@ -14,9 +15,9 @@ const Navbar = () => {
 
                 <div className="flex items-center">
                     <div className="hidden md:flex space-x-6 mr-8">
-                        <a href="#" className="">Categories</a>
-                        <a href="#" className="">Products</a>
-                        <a href="#" className="">About Us</a>
+                        <Link to="/home" className="">Home</ Link>
+                        <Link to="/products" className="">Products</ Link>
+                        <Link to="/about" className="">About Us</ Link>
                     </div>
 
 

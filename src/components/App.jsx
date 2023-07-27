@@ -1,13 +1,24 @@
-import Navbar from "./Navbar/Navbar"
+import { useParams } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
+import Products from "../pages/Products";
+import AboutUs from "../pages/AboutUs";
+import Home from "../pages/Home";
 
 
 function App() {
+  const { name } = useParams();
  //1. Work on header and Navbar
 
   return (
     <>
     <Navbar />
-    <h1 className="text-4xl text-blue-600">Placeholder text</h1>
+    {name === "products" ? (
+      <Products />
+    ) : name === "about" ? (
+      <AboutUs />
+    ) : (
+      <Home />
+    )}
     
     </>
   )
