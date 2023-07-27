@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BurgMenu = () => {
     const [toggle, setToggle] = useState(false);
@@ -22,10 +23,10 @@ const BurgMenu = () => {
 
             { toggle &&
                 <div className="md:hidden">
-                    <div id="menu" className={`absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
-                        <a href="#" className="">Home</a>
-                        <a href="#" className="">Products</a>
-                        <a href="#" className="">About Us</a>
+                    <div id="menu" className={`absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
+                        <Link to="home" className="">Home</ Link>
+                        <Link to="products" className="">Products</ Link>
+                        <Link to="about" className="">About Us</ Link>
                     </div>
                 </div> 
             } 
