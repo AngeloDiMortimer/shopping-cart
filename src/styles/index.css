@@ -6,7 +6,7 @@ body {
     font-family: 'Blinker', sans-serif;
     
 }
-
+ /* Navbar */
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -53,3 +53,8 @@ body {
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+/* end of navbar */
+
+/* Hero grid */
+
