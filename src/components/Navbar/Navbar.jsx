@@ -7,7 +7,7 @@ const Navbar = () => {
     
 
     return (
-        <div className="relative  mx-auto p-6 shadow">
+        <div className="relative mx-auto p-6 shadow bg-red-500 text-slate-50">
             <div className="flex items-center justify-between ">
                 <div className="logo">
                     <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
                     {/* Cart Icon */}
-                    <IconContext.Provider value={{color: "blue", size: 26, className: "mr-4"}}> 
+                    <IconContext.Provider value={{color: "white", size: 26, className: "mr-4"}}> 
                         <div>
                             <FaCartShopping />
                         </div>
