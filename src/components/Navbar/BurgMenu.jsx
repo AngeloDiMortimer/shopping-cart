@@ -23,7 +23,7 @@ const BurgMenu = () => {
 
             { toggle &&
                 <div className="md:hidden">
-                    <div id="menu" className={`absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
+                    <div id="menu" className={`absolute z-40 font-semibold flex flex-col items-center w-full self-end py-8 mt-10 space-y-6 bg-white sm:w-auto sm:self-center right-0 drop-shadow-md`}>
                         <Link to="home" className="">Home</ Link>
                         <Link to="products" className="">Products</ Link>
                         <Link to="about" className="">About Us</ Link>
