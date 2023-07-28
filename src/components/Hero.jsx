@@ -15,7 +15,7 @@ const Hero = () => {
                                 <div id="img1" className="lil-overlay"></div>
                                 <img src={Main1} alt="img1" />
                                 <div className="absolute text-slate-50 font-semibold bottom-0 left-0 right-0 px-2 py-2">
-                                    <p className="main-description md:text-4xl">{"Men's clothing"}</p>
+                                    <p className="main-description py-2 md:text-4xl">{"Men's clothing"}</p>
                                 </div>
                             </a>
                         </div>
@@ -25,7 +25,7 @@ const Hero = () => {
                                 <div id="img2" className="lil-overlay"></div>
                                 <img src={Main2} alt="img2" />
                                 <div className="absolute text-slate-50 font-semibold bottom-0 left-0 right-0 px-2 py-2">
-                                    <p className="main-description md:text-4xl">{"Women's clothing"}</p>
+                                    <p className="main-description py-2 md:text-4xl">{"Women's clothing"}</p>
                                 </div>
                             </a>
                         </div>
@@ -35,7 +35,7 @@ const Hero = () => {
                                 <div id="img3" className="lil-overlay"></div>
                                 <img src={Main3} alt="img3" />
                                 <div className="absolute text-slate-50 font-semibold bottom-0 left-0 right-0 px-2 py-2">
-                                    <p className="main-description md:text-4xl">{"Jewelery"}</p>
+                                    <p className="main-description py-2 md:text-4xl">{"Jewelery"}</p>
                                 </div>
                             </a>
                         </div>
@@ -45,7 +45,7 @@ const Hero = () => {
                                 <div id="img4" className="lil-overlay"></div>
                                 <img src={Main4} alt="img4" />
                                 <div className="absolute text-slate-50 font-semibold bottom-0 left-0 right-0 px-2 py-2">
-                                    <p className="main-description md:text-4xl">{"Electronics"}</p>
+                                    <p className="main-description py-2 md:text-4xl">{"Electronics"}</p>
                                 </div>
                             </a>
                         </div>
