@@ -7,11 +7,13 @@ const Navbar = () => {
     
 
     return (
-        <div className="relative mx-auto p-6 shadow bg-red-500 text-slate-50">
+        <div className="navbar relative shadow-md mx-auto p-6 bg-red-500 text-slate-50">
             <div className="flex items-center justify-between ">
-                <div className="logo">
-                    <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
-                </div>
+                <Link to="home">
+                    <div className="logo">
+                        <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
+                    </div>
+                </Link>
 
                 <div className="flex items-center">
                     <div className="hidden md:flex space-x-6 mr-8">
