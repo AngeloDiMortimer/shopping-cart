@@ -145,6 +145,12 @@ body {
         grid-gap: 13px;
         gap: 13px;
     }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width:450px) {
@@ -153,6 +159,12 @@ body {
         left: 1rem;
         
     }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width:400px) {
@@ -160,5 +172,9 @@ body {
         bottom: 1rem;
         left: 0.5rem;
         
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
     }
 }
