@@ -3,6 +3,7 @@ import ProudProducts from "../components/ProudProducts";
 import Banner from "../components/Banner";
 import Banner1 from "../assets/images/looking_phone.jpg";
 import TrendingSlider from "../components/TrendingSlider";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 img={Banner1}
             />
             <TrendingSlider />
+            <Newsletter />
             {/*<Link to="/about/example"> To example!</Link>*/}
         </div>
     )
