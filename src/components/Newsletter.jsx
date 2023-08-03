@@ -1,8 +1,8 @@
 const Newsletter = () => {
     return (
         <>
-            <div className="news relative flex items-center justify-center mx-auto p-6 bg-gray-900 text-slate-50">
-                <div className="news-text flex flex-col gap-6 items-center text-center">
+            <div className="news relative flex items-center justify-center mx-auto p-12 bg-gray-900 text-slate-50">
+                <div className="news-text flex flex-col gap-4 items-center text-center">
                     <h2 className="font-bold text-4xl">Newsletter</h2>
                     <form className="flex gap-4 items-center">
                         <input className="border-solid md:w-56 border-b-2 border-white bg-transparent
