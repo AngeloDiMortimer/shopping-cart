@@ -48,8 +48,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex items-center">
-                            <div className="flex md:flex-row flex-col gap-4 text-white text-center md:text-xl">
-                                <Link to="home" >Home</ Link>
+                            <div className="flex flex-row  gap-4 text-white text-center md:text-xl">
+                                <Link to="/" >Home</ Link>
                                 <Link to="products" >Products</ Link>
                                 <a href="#" >FAQ</a>
                                 <Link to="about" className="">About</ Link>

@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className="navbar relative shadow-md mx-auto p-6 bg-red-500 text-slate-50">
             <div className="flex items-center justify-between ">
-                <Link to="home">
+                <Link to="/">
                     <div className="logo">
                         <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
                     </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
 
                 <div className="flex items-center">
                     <div className="hidden md:flex space-x-6 mr-8 text-xl">
-                        <Link to="home" className="">Home</ Link>
+                        <Link to="/" className="">Home</ Link>
                         <Link to="products" className="">Products</ Link>
                         <Link to="about" className="">About Us</ Link>
                     </div>
