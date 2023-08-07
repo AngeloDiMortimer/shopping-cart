@@ -15,7 +15,7 @@ const ProductsHeader = () => {
         <>
             <div className="container">
                 <div className="produ-header p-4 flex flex-col items-center">
-                    <div className="title-home flex items-center w-full mb-12">
+                    <div className="title-home flex items-center w-full mt-6 mb-12">
                         
                         <div className="home-arrow flex items-start">
                             <Link to="/">

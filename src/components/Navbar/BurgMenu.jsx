@@ -30,7 +30,7 @@ const BurgMenu = () => {
                         </div>
                         
                         <div onClick={handleOpen}>
-                            <Link to="products">Products</ Link>
+                            <Link to="products/all">Products</ Link>
                         </div>
 
                         <div onClick={handleOpen}>

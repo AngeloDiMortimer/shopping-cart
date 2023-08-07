@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center md:items-end">
                             <div className="flex flex-row  gap-4 text-white text-center md:text-xl">
                                 <Link to="/" >Home</ Link>
-                                <Link to="products" >Products</ Link>
+                                <Link to="products/all" >Products</ Link>
                                 <a href="#" >FAQ</a>
                                 <Link to="about" className="">About</ Link>
                             </div>
