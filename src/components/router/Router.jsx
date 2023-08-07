@@ -4,6 +4,7 @@ import Home from "../../pages/Home";
 import Products from "../../pages/Products";
 import AboutUs from "../../pages/AboutUs";
 import Example from "../../pages/Example";
+import All from "../products-pages/All";
 //import Home from "../../pages/Home";
 
 const Router = () => {
@@ -16,6 +17,12 @@ const Router = () => {
                 {
                     path: "products",
                     element: <Products />,
+                    children: [
+                        {
+                            path: "all",
+                            element: <All />
+                        }
+                    ]
                 },
                 {
                     path: "about",
