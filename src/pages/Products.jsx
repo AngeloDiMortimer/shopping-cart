@@ -3,7 +3,7 @@ import ProductsHeader from "../components/ProductsHeader";
 
 const Products = () => {
     return (
-        <div>
+        <div className="min-h-screen">
             
             <ProductsHeader />
             <Outlet />

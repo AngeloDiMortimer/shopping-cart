@@ -7,7 +7,7 @@ const Navbar = () => {
     
 
     return (
-        <div className="navbar relative shadow-md mx-auto p-6 bg-red-500 text-slate-50">
+        <div className="navbar sticky top-0 shadow-md mx-auto p-6 bg-red-500 text-slate-50">
             <div className="flex items-center justify-between ">
                 <Link to="/">
                     <div className="logo">

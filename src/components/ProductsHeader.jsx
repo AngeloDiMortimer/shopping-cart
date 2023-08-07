@@ -13,7 +13,7 @@ const ProductsHeader = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container-produ">
                 <div className="produ-header p-4 flex flex-col items-center">
                     <div className="title-home flex items-center w-full mt-6 mb-12">
                         

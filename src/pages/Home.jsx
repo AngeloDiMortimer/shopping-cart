@@ -7,7 +7,7 @@ import TrendingSlider from "../components/TrendingSlider";
 
 const Home = () => {
     return (
-        <div>
+        <div className="min-h-screen">
             <Hero />
             <ProudProducts />
             <Banner 
