@@ -3,7 +3,6 @@ import App from "../App";
 import Home from "../../pages/Home";
 import Products from "../../pages/Products";
 import AboutUs from "../../pages/AboutUs";
-import Example from "../../pages/Example";
 import All from "../products-pages/All";
 import Men from "../products-pages/Men";
 import Women from "../products-pages/Women";
@@ -46,12 +45,7 @@ const Router = () => {
                 },
                 {
                     path: "about",
-                    element: <AboutUs />,
-                    children: [
-                        {
-                            path: "example", element: <Example />
-                        }
-                    ]
+                    element: <AboutUs />
                 }
             ]
         },
