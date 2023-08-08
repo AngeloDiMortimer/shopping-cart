@@ -1,7 +1,7 @@
 import products from "../../data/ProductData";
 
-const ProductsItemJewel = () => {
-    const filteredItems = products.filter((item) => item.category === "jewelery");
+const ItemMen = () => {
+    const filteredItems = products.filter((item) => item.category === "men's clothing");
     return (
         <>
         {filteredItems.map((item) => (
@@ -21,4 +21,4 @@ const ProductsItemJewel = () => {
     )
 }
 
-export default ProductsItemJewel;
+export default ItemMen;

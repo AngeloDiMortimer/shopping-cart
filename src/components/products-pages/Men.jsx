@@ -1,4 +1,4 @@
-import ProductsItemMen from "./ProductsItemMen";
+import ItemMen from "./ItemMen";
 
 const Men = () => {
     return (
@@ -6,7 +6,7 @@ const Men = () => {
         <div className="proud-container p-4 flex flex-col items-center"> 
             <div className="container">
                 <div className="products-grid">
-                    <ProductsItemMen />
+                    <ItemMen />
                 </div>
 
             </div>

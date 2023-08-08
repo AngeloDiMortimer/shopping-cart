@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Banner = ({ title, text, img }) => {
     return (
         <div className="banner mt-4 flex flex-col items-center md:p-4">
@@ -9,12 +11,14 @@ const Banner = ({ title, text, img }) => {
                         <div className="text flex flex-col items-center md:items-start justify-center">
                             <h2 className="font-semibold text-center text-5xl md:text-5xl md:text-left mb-4">{title}</h2>
                             <p className="mb-6 text-center md:text-left">{text}</p>
-                            <button className="w-28 text-xl p-2 cursor-pointer 
-                            rounded-md border-solid border-2 border-slate-50 
-                            transition-all duration-300
-                            hover:bg-slate-50 hover:text-gray-900">
-                                Shop Now
-                            </button>
+                            <Link to="/products/all">
+                                <button className="w-28 text-xl p-2 cursor-pointer 
+                                rounded-md border-solid border-2 border-slate-50 
+                                transition-all duration-300
+                                hover:bg-slate-50 hover:text-gray-900">
+                                    Shop Now
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="img-side w-1/2 hidden md:flex">

@@ -1,4 +1,4 @@
-import ProductsItemJewel from "./ProductsItemJewel";
+import ItemJewel from "./ItemJewel";
 
 
 const Jewelery = () => {
@@ -7,7 +7,7 @@ const Jewelery = () => {
         <div className="proud-container p-4 flex flex-col items-center"> 
             <div className="container">
                 <div className="products-grid">
-                    <ProductsItemJewel />
+                    <ItemJewel />
                 </div>
 
             </div>

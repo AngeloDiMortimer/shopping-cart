@@ -1,7 +1,7 @@
 import products from "../../data/ProductData";
 
-const ProductsItemWomen = () => {
-    const filteredItems = products.filter((item) => item.category === "women's clothing");
+const ItemElec = () => {
+    const filteredItems = products.filter((item) => item.category === "electronics");
     return (
         <>
         {filteredItems.map((item) => (
@@ -21,4 +21,4 @@ const ProductsItemWomen = () => {
     )
 }
 
-export default ProductsItemWomen;
+export default ItemElec;

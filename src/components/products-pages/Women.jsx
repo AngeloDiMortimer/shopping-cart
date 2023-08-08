@@ -1,4 +1,4 @@
-import ProductsItemWomen from "./ProductsItemWomen";
+import ItemWomen from "./ItemWomen";
 
 const Women = () => {
     return (
@@ -6,7 +6,7 @@ const Women = () => {
         <div className="proud-container p-4 flex flex-col items-center"> 
             <div className="container">
                 <div className="products-grid">
-                    <ProductsItemWomen />
+                    <ItemWomen />
                 </div>
 
             </div>

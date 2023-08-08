@@ -1,9 +1,10 @@
 import products from "../../data/ProductData";
 
-const ProductsItemAll = () => {
+const ItemWomen = () => {
+    const filteredItems = products.filter((item) => item.category === "women's clothing");
     return (
         <>
-        {products.map((item) => (
+        {filteredItems.map((item) => (
             <div key={item.id} className="product-normal outline outline-2 outline-gray-300 
             flex flex-col items-center text-center p-2 h-80
              cursor-pointer transition-all duration-500 hover:outline-gray-900">
@@ -20,4 +21,4 @@ const ProductsItemAll = () => {
     )
 }
 
-export default ProductsItemAll;
+export default ItemWomen;
