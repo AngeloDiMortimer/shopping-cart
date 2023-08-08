@@ -8,6 +8,7 @@ import Men from "../products-pages/Men";
 import Women from "../products-pages/Women";
 import Jewelery from "../products-pages/Jewelery";
 import Electronics from "../products-pages/Electronics";
+import ItemsPage from "../../pages/ItemsPage";
 //import Home from "../../pages/Home";
 
 const Router = () => {
@@ -41,6 +42,10 @@ const Router = () => {
                             path: "electronics",
                             element: <Electronics />
                         },
+                        {
+                            path: "item/:id",
+                            element: <ItemsPage />
+                        }
                     ]
                 },
                 {
