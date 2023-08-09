@@ -26,15 +26,15 @@ const BurgMenu = () => {
                     <div id="menu" className={`absolute z-40 font-semibold bg-gray-900 flex flex-col items-center w-full self-end py-8 mt-10 space-y-6 sm:w-auto sm:self-center right-0 drop-shadow-md`}>
                         
                         <div onClick={handleOpen}>
-                            <Link to="/">Home</ Link>
+                            <Link to="/" onClick={() => window.top(0, 0)}>Home</ Link>
                         </div>
                         
                         <div onClick={handleOpen}>
-                            <Link to="products/all">Products</ Link>
+                            <Link to="products/all" onClick={() => window.top(0, 0)}>Products</ Link>
                         </div>
 
                         <div onClick={handleOpen}>
-                            <Link to="about">About Us</ Link>
+                            <Link to="about" onClick={() => window.top(0, 0)}>About Us</ Link>
                         </div>
 
                     </div>

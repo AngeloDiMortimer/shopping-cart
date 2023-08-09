@@ -53,9 +53,9 @@ const Navbar = () => {
 
                     <div className="flex items-center">
                         <div className="hidden md:flex space-x-6 mr-8 text-xl">
-                            <Link to="/" className="">Home</ Link>
-                            <Link to="products/all" className="">Products</ Link>
-                            <Link to="about" className="">About Us</ Link>
+                            <Link to="/" onClick={() => window.top(0, 0)}>Home</ Link>
+                            <Link to="products/all" onClick={() => window.top(0, 0)}>Products</ Link>
+                            <Link to="about" onClick={() => window.top(0, 0)}>About Us</ Link>
                         </div>
 
 

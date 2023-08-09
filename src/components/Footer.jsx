@@ -49,10 +49,10 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center md:items-end">
                             <div className="flex flex-row  gap-4 text-white text-center md:text-xl">
-                                <Link to="/" >Home</ Link>
-                                <Link to="products/all" >Products</ Link>
+                                <Link to="/" onClick={() => window.top(0, 0)}>Home</ Link>
+                                <Link to="products/all" onClick={() => window.top(0, 0)}>Products</ Link>
                                 <a href="#" >FAQ</a>
-                                <Link to="about" className="">About</ Link>
+                                <Link to="about" onClick={() => window.top(0, 0)}>About</ Link>
                             </div>
                             <div className="text-center text-lg text-white mt-6 items-start">
                                 Copyright &copy; Angelo Martínez 2023

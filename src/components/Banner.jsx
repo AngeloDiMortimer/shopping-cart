@@ -11,7 +11,9 @@ const Banner = ({ title, text, img }) => {
                         <div className="text flex flex-col items-center md:items-start justify-center">
                             <h2 className="font-semibold text-center text-5xl md:text-5xl md:text-left mb-4">{title}</h2>
                             <p className="mb-6 text-center md:text-left">{text}</p>
-                            <Link to="/products/all">
+                            <Link 
+                            onClick={() => window.top(0, 0)}
+                            to="/products/all">
                                 <button className="w-28 text-xl p-2 cursor-pointer 
                                 rounded-md border-solid border-2 border-slate-50 
                                 transition-all duration-300
