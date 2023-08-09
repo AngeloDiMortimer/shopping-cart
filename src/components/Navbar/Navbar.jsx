@@ -22,13 +22,13 @@ const Navbar = () => {
             {/* Overlay */}
             <div
                 onClick={openCart}
-                className={`page-overlay ${cart ? "open-flex" : "closed-fex"}`}
+                className={`page-overlay ${cart ? "open-flex" : ""}`}
             ></div>
 
             {/* cart */}
             <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
-                <div className="cart-title-btn">
-                    <h2 className="cart-full-h2">
+                <div className="cart-title-btn p-4 md:p-8">
+                    <h2 className="cart-full-h2 text-2xl md:text-4xl">
                         Your shopping cart ({cartItem.length})
                     </h2>
                     <button onClick={openCart} className="close-cart" >X</button>
@@ -61,11 +61,19 @@ const Navbar = () => {
 
 
                         {/* Cart Icon */}
-                        <IconContext.Provider value={{color: "white", size: 26, className: "mr-4"}}> 
-                            <div>
+                        <div
+                            data-array-length={cartItem.length}
+                            onClick={openCart}
+                            className={`icon ${
+                                cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                            }`}
+                        >
+                            <IconContext.Provider value={{color: "white", size: 26, className: "mr-4 cursor-pointer"}}> 
                                 <FaCartShopping />
-                            </div>
-                        </IconContext.Provider>
+                                
+                            </IconContext.Provider>
+                        </div>
+
                         
                         {/* Mobile Menu*/}
                         <BurgMenu />
