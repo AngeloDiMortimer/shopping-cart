@@ -45,7 +45,7 @@ const Navbar = () => {
 
             <div className="navbar sticky top-0 shadow-md mx-auto p-6 bg-red-500 text-slate-50 z-40">
                 <div className="flex items-center justify-between ">
-                    <Link to="/">
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                         <div className="logo">
                             <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
                         </div>
@@ -53,9 +53,9 @@ const Navbar = () => {
 
                     <div className="flex items-center">
                         <div className="hidden md:flex space-x-6 mr-8 text-xl">
-                            <Link to="/" onClick={() => window.top(0, 0)}>Home</ Link>
-                            <Link to="products/all" onClick={() => window.top(0, 0)}>Products</ Link>
-                            <Link to="about" onClick={() => window.top(0, 0)}>About Us</ Link>
+                            <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</ Link>
+                            <Link to="products/all" onClick={() => window.scrollTo(0, 0)}>Products</ Link>
+                            <Link to="about" onClick={() => window.scrollTo(0, 0)}>About Us</ Link>
                         </div>
 
 

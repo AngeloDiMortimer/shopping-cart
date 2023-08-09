@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container flex items-center gap-4 text-center md:text-left flex-col-reverse md:flex-row justify-between">
                 <div className="logo-container flex flex-col gap-2">
 
-                    <Link to="/">
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                         <div className="logo">
                                 <h1 className="text-2xl font-bold md:text-3xl">TrendyHeaven</h1>
                         </div>
@@ -49,10 +49,10 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center md:items-end">
                             <div className="flex flex-row  gap-4 text-white text-center md:text-xl">
-                                <Link to="/" onClick={() => window.top(0, 0)}>Home</ Link>
-                                <Link to="products/all" onClick={() => window.top(0, 0)}>Products</ Link>
+                                <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</ Link>
+                                <Link to="products/all" onClick={() => window.scrollTo(0, 0)}>Products</ Link>
                                 <a href="#" >FAQ</a>
-                                <Link to="about" onClick={() => window.top(0, 0)}>About</ Link>
+                                <Link to="about" onClick={() => window.scrollTo(0, 0)}>About</ Link>
                             </div>
                             <div className="text-center text-lg text-white mt-6 items-start">
                                 Copyright &copy; Angelo Martínez 2023
