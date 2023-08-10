@@ -27,7 +27,9 @@ const ItemsPage = () => {
     };
 
     const calcPrice = (quantity) => {
-        return quantity * item[0].price;
+        const numb = quantity * item[0].price;
+        
+        return numb.toFixed(2);
     };
 
     const [notify, setNotify] = useState(false);
