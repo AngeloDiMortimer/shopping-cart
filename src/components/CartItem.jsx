@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../pages/ItemsPage";
 
-const CartItem = () => {
+const CartItem = ( { item }) => {
     const [quantity, setQuantity] = useState(1);
     const { cartItem, setCartItem } = useContext(CartContext);
     const [deleteItem, setDeleteItem] = useState(cartItem);
@@ -9,6 +10,7 @@ const CartItem = () => {
     const increase = () => {
         if (quantity >= 1) {
           setQuantity(quantity + 1);
+          console.log(cartItem);
         }
       };
     
@@ -36,13 +38,12 @@ const CartItem = () => {
 
     return (
         <>
-        {cartItem.map((item, id) => (
-            <div key={id} className="cart-item">
+            <div className="cart-item">
             <div className="cart-img">
-                <img src={item.img} alt="product" />
+                <img className="w-32" src={item.image} alt="product" />
             </div>
             <div className="cart-middle">
-                <p className="cart-name">{item.description}</p>
+                <p className="cart-name">{item.title}</p>
                 <div className="cart-btns">
                 <button onClick={decrease}>-</button>
                 <p className="quantity">{quantity}</p>
@@ -54,7 +55,6 @@ const CartItem = () => {
                 <button onClick={() => removeFromCart(item.id)} className="close-cart" >X</button>
             </div>
             </div>
-        ))}
         </>
     )    
 }
