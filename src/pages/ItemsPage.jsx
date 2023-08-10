@@ -38,6 +38,8 @@ const ItemsPage = () => {
         setNotify(!notify);
     };
 
+    const productPrice = calcPrice(quantity);
+
     return (
         <>
             <div 
@@ -77,7 +79,7 @@ const ItemsPage = () => {
                                     onClick={increase}>+</button>
                                 </div>
                             </div>
-                            <p className="product-price font-semibold text-2xl">{`$ ${calcPrice(quantity)}`}</p>
+                            <p className="product-price font-semibold text-2xl">{`$ ${productPrice}`}</p>
                             <div className="atc-buy flex gap-4">
                             <button
                                 onClick={() => {

@@ -16,6 +16,7 @@ const CartItem = ( { item }) => {
       const decrease = () => {
         if (quantity > 1) {
           setQuantity(quantity - 1);
+          console.log(cartItem);
         }
       };
     
@@ -27,14 +28,13 @@ const CartItem = ( { item }) => {
       const removeFromCart = (id) => {
         const updateCart = cartItem.filter((item) => item.id !== id);
         setDeleteItem(updateCart);
-        const json = JSON.stringify(cartItem.id);
-        localStorage.removeItem("cartItem", json);
       };
 
       useEffect(() => {
         setCartItem(deleteItem);
       }, [deleteItem, setCartItem]);
 
+      const sumPrice = calcPrice(quantity, item.price);
 
     return (
         <>
@@ -54,7 +54,7 @@ const CartItem = ( { item }) => {
                   hover:bg-red-500 hover:text-slate-50 w-8" onClick={increase}>+</button>
                 </div>
                 <div className="cart-right flex items-center justify-between gap-8">
-                  <p className="cart-price font-semibold text-xl">{`$ ${calcPrice(quantity, item.price)}`}</p>
+                  <p className="cart-price font-semibold text-xl">{`$ ${sumPrice}`}</p>
                   <button onClick={() => removeFromCart(item.id)} className="close-cart" >X</button>
                 </div>
             </div>
