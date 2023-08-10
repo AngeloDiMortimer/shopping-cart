@@ -51,7 +51,7 @@ const Footer = () => {
                             <div className="flex flex-row  gap-4 text-white text-center md:text-xl">
                                 <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</ Link>
                                 <Link to="products/all" onClick={() => window.scrollTo(0, 0)}>Products</ Link>
-                                <a href="#" >FAQ</a>
+                                <Link to="FAQ" >FAQ</Link>
                                 <Link to="about" onClick={() => window.scrollTo(0, 0)}>About</ Link>
                             </div>
                             <div className="text-center text-lg text-white mt-6 items-start">

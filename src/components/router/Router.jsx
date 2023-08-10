@@ -9,6 +9,7 @@ import Women from "../products-pages/Women";
 import Jewelery from "../products-pages/Jewelery";
 import Electronics from "../products-pages/Electronics";
 import ItemsPage from "../../pages/ItemsPage";
+import ErrorPage from "../../pages/ErrorPage";
 //import Home from "../../pages/Home";
 
 const Router = () => {
@@ -16,15 +17,18 @@ const Router = () => {
         {
             path: "/",
             element: <App />,
+            errorElement: <ErrorPage />,
             children: [
                 { index: true, element: <Home /> },
                 {
                     path: "products",
                     element: <Products />,
                     children: [
+                        {index: true, element: <ErrorPage />},
                         {
                             path: "all",
-                            element: <All />
+                            element: <All />,
+                            
                         },
                         {
                             path: "mens_clothing",
