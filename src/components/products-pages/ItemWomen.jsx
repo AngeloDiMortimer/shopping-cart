@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import products from "../../data/ProductData";
+import products from "../../data/productData";
 
 const ItemWomen = () => {
     const filteredItems = products.filter((item) => item.category === "women's clothing");

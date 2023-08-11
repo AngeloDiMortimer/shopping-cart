@@ -1,4 +1,4 @@
-import products from "../data/ProductData";
+import products from "../data/productData";
 import TrendingSlider from "../components/TrendingSlider";
 import { useParams } from "react-router-dom";
 import { createContext, useContext, useState } from "react";
